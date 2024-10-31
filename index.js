@@ -6,6 +6,7 @@ import {
     REST,
     Routes,
     SlashCommandBuilder,
+    ActivityType
 } from "discord.js";
 
 async function chat(prompt) {
@@ -170,8 +171,9 @@ async function discord() {
     });
 
     client.on("ready", () => {
-        console.log(`Logged in as ${client.user.tag}!`);
         registerCommands();
+        console.log(`Logged in as ${client.user.tag}!`);
+        client.user.setActivity(process.env.ACTIVITY, { type: ActivityType.Custom });
     });
 
     // Handle interaksi slash command
