@@ -223,7 +223,7 @@ async function discord() {
                         // console.log(response);
                         await interaction.channel.send(response[i]);
                         
-                        await new Promise(resolve => setTimeout(resolve, 500));
+                        await new Promise(resolve => setTimeout(resolve, 200));
                     }
 
                     break;
