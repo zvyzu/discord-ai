@@ -2,15 +2,14 @@ import dotenv from "dotenv";
 import Groq from "groq-sdk";
 import {
     Client,
+    ActivityType,
     GatewayIntentBits,
     REST,
     Routes,
     SlashCommandBuilder,
-    ActivityType
 } from "discord.js";
 
 async function chat(prompt) {
-    // Inisialisasi client Groq
     const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
     const response = await groq.chat.completions.create({
         // Required parameters
@@ -107,6 +106,19 @@ function splitTextIntoChunks(text) {
     return chunks;
 }
 
+// Fungsi untuk mengkonversi gambar ke base64
+async function imageUrlToBase64(url) {
+    try {
+        const response = await fetch(url);
+        const arrayBuffer = await response.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
+        return `data:image/jpeg;base64,${buffer.toString('base64')}`;
+    } catch (error) {
+        console.error('Error converting image:', error);
+        throw error;
+    }
+}
+
 // Fungsi untuk mendaftarkan slash commands
 async function registerCommands() {
     // Daftar command yang akan dibuat
@@ -121,7 +133,7 @@ async function registerCommands() {
             .addUserOption((option) => option
                 .setName("user")
                 .setDescription("User yang ingin disapa")
-                .setRequired(true),
+                .setRequired(false)
             ),
 
         new SlashCommandBuilder()
@@ -130,7 +142,7 @@ async function registerCommands() {
             .addIntegerOption((option) => option
                 .setName("sides")
                 .setDescription("Jumlah sisi dadu")
-                .setRequired(true),
+                .setRequired(false)
             ),
 
         new SlashCommandBuilder()
@@ -139,8 +151,23 @@ async function registerCommands() {
             .addStringOption((option) => option
                 .setName("prompt")
                 .setDescription("Pertanyaan yang ingin diajukan")
-                .setRequired(true),
+                .setRequired(true)
             ),
+
+        new SlashCommandBuilder()
+            .setName('analyze')
+            .setDescription('Analisis gambar yang diunggah')
+            .addAttachmentOption(option => option
+                .setName('image')
+                .setDescription('Gambar yang akan dianalisis')
+                .setRequired(true)
+            )
+            .addStringOption((option) => option
+                .setName("prompt")
+                .setDescription("Pertanyaan yang ingin diajukan")
+                .setRequired(true)
+            ),
+
     ].map((command) => command.toJSON());
 
     // Mendaftarkan command ke Discord
@@ -164,8 +191,8 @@ async function discord() {
     const client = new Client({
         intents: [
             GatewayIntentBits.Guilds,
-            GatewayIntentBits.GuildMessages,
             GatewayIntentBits.GuildMembers,
+            GatewayIntentBits.GuildMessages,
             GatewayIntentBits.DirectMessages,
         ],
     });
@@ -215,17 +242,17 @@ async function discord() {
                     await interaction.editReply(
                         `${interaction.user} : ${interaction.options.getString("prompt")}`
                     );
+
                     let response = splitTextIntoChunks(
                         await chat(
                             interaction.options.getString("prompt")
                         )
                     );
-                    
+
                     for (let i in response) {
-                        // console.log(response);
                         await interaction.channel.send(response[i]);
                         
-                        await new Promise(resolve => setTimeout(resolve, 200));
+                        await new Promise(resolve => setTimeout(resolve, 100));
                     }
 
                     break;
@@ -242,7 +269,7 @@ async function discord() {
     client.login(process.env.DISCORD_TOKEN);
 }
 
-export async function main() {
+async function main() {
     dotenv.config();
     discord();
 }
