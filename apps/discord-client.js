@@ -18,8 +18,59 @@ export async function discordClient() {
 
   client.on("ready", () => {
     registerCommands();
-    console.log(`Logged in as ${client.user.tag}!`);
+    console.log(`Logged in as ${ client.user.tag }!`);
     client.user.setActivity(process.env.ACTIVITY, { type: ActivityType.Custom });
+  });
+
+  client.on('messageCreate', async (message) => {
+    if (message.author.bot) return;
+    if (message.channel.id !== process.env.CHANNEL_ID) return;
+    if (message.content.startsWith('!')) return;
+
+    let conversationLog = [];
+
+    try {
+      await message.channel.sendTyping();
+
+      let previousMessage = await message.channel.messages.fetch({ limit: 20 });
+      previousMessage.reverse();
+
+      previousMessage.forEach(async (msg) => {
+        if (msg.content.startsWith('!')) return;
+        if (msg.author.id !== client.user.id && message.author.bot) return;
+
+        if (msg.author.id == client.user.id) {
+          conversationLog.push({
+            role: "assistant",
+            content: msg.content,
+            name: msg.author.username
+              .replace(/\s+/g, '_')
+              .replace(/[^\w\s]/gi, ''),
+          });
+        }
+
+        if (!message.author.bot) {
+          conversationLog.push({
+            role: 'user',
+            content: msg.content,
+            name: msg.author.username
+              .replace(/\s+/g, '_')
+              .replace(/[^\w\s]/gi, ''),
+          });
+        }
+
+      });
+
+      const array = splitTextIntoChunks(await chat(conversationLog));
+
+      for (const i in array) {
+        await message.reply(array[i]);
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
+    } catch (error) {
+      console.log(`ERROR: ${error}`);
+    }
   });
 
   // Handle interaksi slash command
@@ -27,7 +78,7 @@ export async function discordClient() {
     if (!interaction.isCommand()) return;
 
     async function sendMessagesSequentially(response) {
-      let array = splitTextIntoChunks(await response);
+      const array = splitTextIntoChunks(await response);
 
       try {
         for (let i in array) {
@@ -59,9 +110,11 @@ export async function discordClient() {
           break;
 
         case "hello":
+          await interaction.deferReply();
           const targetUser = interaction.options.getUser("user") || interaction.user;
-          await interaction.reply(
-            `👋 Halo ${targetUser}! Semoga harimu menyenangkan ${process.env.HELLO_MESSAGE}`,
+          const helloMessage = await chat(`Sapa ${targetUser}`);
+          await interaction.editReply(
+            `👋 ${helloMessage} ${targetUser} ${process.env.HELLO_MESSAGE}`,
           );
           break;
 
@@ -80,7 +133,7 @@ export async function discordClient() {
           );
 
           sendMessagesSequentially(
-            chat(
+            await chat(
               interaction.options.getString("prompt")
             )
           );
@@ -107,7 +160,7 @@ export async function discordClient() {
           const imageDataUrl = await imageUrlToBase64(attachment.url);
 
           sendMessagesSequentially(
-            analyze(
+            await analyze(
               imageDataUrl,
               interaction.options.getString("prompt")
             )
