@@ -56,6 +56,10 @@ export function splitTextIntoChunks(text) {
   return chunks;
 }
 
+/**
+ * 
+ * @returns { string } Hari saat ini
+ */
 export function hari() {
   const date = new Date();
 
@@ -77,6 +81,10 @@ export function hari() {
   }
 }
 
+/**
+ * 
+ * @returns { string } Bulan saat ini
+ */
 export function bulan() {
   const date = new Date();
 

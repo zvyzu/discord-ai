@@ -3,7 +3,23 @@ import { hari, bulan } from "../functions/utils.js";
 
 /**
  * 
- * @param { string } prompt Pertanyaan yang ingin diajukan
+ * @param { string | object } prompt Pertanyaan yang ingin diajukan
+ * @example await chat("Halo, apa kabar?")
+ * @example 
+ * let messages = [
+ *   {
+ *      role: "user",
+ *      content: "Halo, apa kabar?",
+ *      name: "username"
+ *   },
+ *   {
+ *      role: "assistant",
+ *      content: "Kabar baik, terima kasih. Ada yang bisa saya bantu?",
+ *      name: "assistantname"
+ *   },
+ * ];
+ * 
+ * await chat(messages)
  * @returns { Promise<string> } Jawaban / Respon dari AI Model
  */
 export async function chat(prompt) {

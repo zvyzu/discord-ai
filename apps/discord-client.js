@@ -22,6 +22,7 @@ export async function discordClient() {
     client.user.setActivity(process.env.ACTIVITY, { type: ActivityType.Custom });
   });
 
+  // Handle chat message pada channel yang sudah ditentukan
   client.on('messageCreate', async (message) => {
     if (message.author.bot) return;
     if (message.channel.id !== process.env.CHANNEL_ID) return;
