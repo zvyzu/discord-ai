@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon index"
+    "dev": "npx nodemon index",
+    "req": "npm i discord.js dotenv groq-sdk nodemon"
   },
   "type": "module",
   "author": "",
-  "license": "ISC",
+  "license": "",
   "description": "",
   "dependencies": {
     "discord.js": "^14.16.3",
