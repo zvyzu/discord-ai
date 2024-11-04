@@ -67,6 +67,7 @@ export async function chat(prompt) {
     prompt.forEach(msg => {
       parameters.messages.push(msg);
     });
+    const apikey = process.env.GROQ_API_KEY;
   } else if (typeof(prompt) == "string") {
     parameters.messages.push(
       {
@@ -74,9 +75,10 @@ export async function chat(prompt) {
         content: prompt,
       },
     );
+    const apikey = process.env.GROQ_API_KEY_BACKUP;
   }
 
-  const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+  const groq = new Groq({ apiKey: apikey });
   const response = await groq.chat.completions.create(parameters);
 
   const ret = response.choices[0]?.message?.content;

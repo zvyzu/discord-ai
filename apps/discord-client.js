@@ -33,7 +33,7 @@ export async function discordClient() {
     try {
       await message.channel.sendTyping();
 
-      let previousMessage = await message.channel.messages.fetch({ limit: 20 });
+      let previousMessage = await message.channel.messages.fetch({ limit: 15 });
       previousMessage.reverse();
 
       previousMessage.forEach(async (msg) => {
