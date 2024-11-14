@@ -93,7 +93,7 @@ export async function discordClient() {
       .setFooter({ text: 'Peraturan ini mungkin akan diperbarui sewaktu-waktu.' })
 
     if (!rules.content.startsWith('!')) {
-      await rules.channel.send('https://media.discordapp.net/attachments/936459672569913357/1306251679896703006/BannerRule_upscayl_1x_ultrasharp.png?ex=6735fd2d&is=6734abad&hm=39faedd2f12a0b9d88e18500dff8eec4d91672fa90ec439006fc9f8bd73d8bbe&=&format=webp&quality=lossless&width=1080&height=253');
+      await rules.channel.send({ files: ["./assets/img/BannerRule.png"] });
       await rules.channel.send({ embeds: [embed] });
     }
 
