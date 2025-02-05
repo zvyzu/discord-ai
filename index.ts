@@ -1,7 +1,5 @@
 // import { Client, GatewayIntentBits } from "discord.js";
 // import { Bot } from "./src/app/Bot";
-import config from "./src/utils/config";
-import date from "./src/utils/date";
 
 // export const bot = new Bot(
 //   new Client({
@@ -15,5 +13,3 @@ import date from "./src/utils/date";
 //     ]
 //   })
 // );
-
-console.log(date);

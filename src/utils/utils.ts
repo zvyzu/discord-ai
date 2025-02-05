@@ -1,10 +1,4 @@
-import i18next from './i18n';
-
-/**
- * @param { string } url convert image to base64
- * @returns { Promise<string> } string base64 image
- */
-export async function imageUrlToBase64(url: string): Promise<string> {
+export async function imageUrlToBase64(url: string) {
   try {
     const response = await fetch(url);
     const arrayBuffer = await response.arrayBuffer();
@@ -16,11 +10,7 @@ export async function imageUrlToBase64(url: string): Promise<string> {
   }
 }
 
-/**
- * @param { string } text split text into chunks array
- * @returns { array<string> } Array chunks of text
- */
-export function splitTextIntoChunks(text: string): string[] {
+export function splitTextIntoChunks(text: string) {
   const maxLength = 2000;
   const chunks = [];
   let currentChunk = '';
@@ -49,27 +39,4 @@ export function splitTextIntoChunks(text: string): string[] {
   if (currentChunk) chunks.push(currentChunk.trim());
 
   return chunks;
-}
-
-export function days(): string | undefined {
-  const date = new Date();
-  const { t } = i18next;
-  i18next.changeLanguage('en');
-
-  switch (date.getDay()) {
-    case 0:
-      return t('days.sunday');
-    case 1:
-      return t('days.monday');
-    case 2:
-      return t('days.tuesday');
-    case 3:
-      return t('days.wednesday');
-    case 4:
-      return t('days.thursday');
-    case 5:
-      return t('days.friday');
-    case 6:
-      return t('days.saturday');
-  }
 }

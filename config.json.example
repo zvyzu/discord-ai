@@ -10,6 +10,7 @@
         "DISCORD_TOKEN": ""
     },
     "groq": {
+        "DEFAULT_MODEL": "",
         "GROQ_API_KEY": "",
         "GROQ_API_KEY_BACKUP": "",
         "HELLO_MESSAGE": "",
