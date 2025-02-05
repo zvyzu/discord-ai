@@ -1,4 +1,9 @@
-# groq-bot
+# discord-ai
+
+[![CodeFactor](https://www.codefactor.io/repository/github/zvyzu/discord-ai/badge)](https://www.codefactor.io/repository/github/zvyzu/discord-ai)
+
+Requirement:
+Bun v1.2
 
 To install dependencies:
 
