@@ -1,0 +1,11 @@
+{
+    "days": {
+        "monday": "Senin",
+        "tuesday": "Selasa",
+        "wednesday": "Rabu",
+        "thursday": "Kamis",
+        "friday": "Jum'at",
+        "saturday": "Sabtu",
+        "sunday": "Minggu"
+    }
+}

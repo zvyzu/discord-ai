@@ -1,0 +1,746 @@
+{
+    "links": {
+        "self": "https://global.metadapi.com/lang/v1/languages"
+    },
+    "meta": {
+        "count": 184
+    },
+    "data": [
+        {
+            "langCode": "aa",
+            "langEnglishName": "Afar"
+        },
+        {
+            "langCode": "ab",
+            "langEnglishName": "Abkhazian"
+        },
+        {
+            "langCode": "ae",
+            "langEnglishName": "Avestan"
+        },
+        {
+            "langCode": "af",
+            "langEnglishName": "Afrikaans"
+        },
+        {
+            "langCode": "ak",
+            "langEnglishName": "Akan"
+        },
+        {
+            "langCode": "am",
+            "langEnglishName": "Amharic"
+        },
+        {
+            "langCode": "an",
+            "langEnglishName": "Aragonese"
+        },
+        {
+            "langCode": "ar",
+            "langEnglishName": "Arabic"
+        },
+        {
+            "langCode": "as",
+            "langEnglishName": "Assamese"
+        },
+        {
+            "langCode": "av",
+            "langEnglishName": "Avaric"
+        },
+        {
+            "langCode": "ay",
+            "langEnglishName": "Aymara"
+        },
+        {
+            "langCode": "az",
+            "langEnglishName": "Azerbaijani"
+        },
+        {
+            "langCode": "ba",
+            "langEnglishName": "Bashkir"
+        },
+        {
+            "langCode": "be",
+            "langEnglishName": "Belarusian"
+        },
+        {
+            "langCode": "bg",
+            "langEnglishName": "Bulgarian"
+        },
+        {
+            "langCode": "bh",
+            "langEnglishName": "Bihari Languages"
+        },
+        {
+            "langCode": "bi",
+            "langEnglishName": "Bislama"
+        },
+        {
+            "langCode": "bm",
+            "langEnglishName": "Bambara"
+        },
+        {
+            "langCode": "bn",
+            "langEnglishName": "Bengali"
+        },
+        {
+            "langCode": "bo",
+            "langEnglishName": "Tibetan"
+        },
+        {
+            "langCode": "br",
+            "langEnglishName": "Breton"
+        },
+        {
+            "langCode": "bs",
+            "langEnglishName": "Bosnian"
+        },
+        {
+            "langCode": "ca",
+            "langEnglishName": "Catalan; Valencian"
+        },
+        {
+            "langCode": "ce",
+            "langEnglishName": "Chechen"
+        },
+        {
+            "langCode": "ch",
+            "langEnglishName": "Chamorro"
+        },
+        {
+            "langCode": "co",
+            "langEnglishName": "Corsican"
+        },
+        {
+            "langCode": "cr",
+            "langEnglishName": "Cree"
+        },
+        {
+            "langCode": "cs",
+            "langEnglishName": "Czech"
+        },
+        {
+            "langCode": "cu",
+            "langEnglishName": "Church Slavic"
+        },
+        {
+            "langCode": "cv",
+            "langEnglishName": "Chuvash"
+        },
+        {
+            "langCode": "cy",
+            "langEnglishName": "Welsh"
+        },
+        {
+            "langCode": "da",
+            "langEnglishName": "Danish"
+        },
+        {
+            "langCode": "de",
+            "langEnglishName": "German"
+        },
+        {
+            "langCode": "dv",
+            "langEnglishName": "Maldivian; Divehi; Dhivehi"
+        },
+        {
+            "langCode": "dz",
+            "langEnglishName": "Dzongkha"
+        },
+        {
+            "langCode": "ee",
+            "langEnglishName": "Ewe"
+        },
+        {
+            "langCode": "el",
+            "langEnglishName": "Greek"
+        },
+        {
+            "langCode": "en",
+            "langEnglishName": "English"
+        },
+        {
+            "langCode": "eo",
+            "langEnglishName": "Esperanto"
+        },
+        {
+            "langCode": "es",
+            "langEnglishName": "Spanish"
+        },
+        {
+            "langCode": "et",
+            "langEnglishName": "Estonian"
+        },
+        {
+            "langCode": "eu",
+            "langEnglishName": "Basque"
+        },
+        {
+            "langCode": "fa",
+            "langEnglishName": "Persian"
+        },
+        {
+            "langCode": "ff",
+            "langEnglishName": "Fulah"
+        },
+        {
+            "langCode": "fi",
+            "langEnglishName": "Finnish"
+        },
+        {
+            "langCode": "fj",
+            "langEnglishName": "Fijian"
+        },
+        {
+            "langCode": "fo",
+            "langEnglishName": "Faroese"
+        },
+        {
+            "langCode": "fr",
+            "langEnglishName": "French"
+        },
+        {
+            "langCode": "fy",
+            "langEnglishName": "Western Frisian"
+        },
+        {
+            "langCode": "ga",
+            "langEnglishName": "Irish"
+        },
+        {
+            "langCode": "gd",
+            "langEnglishName": "Gaelic"
+        },
+        {
+            "langCode": "gl",
+            "langEnglishName": "Galician"
+        },
+        {
+            "langCode": "gn",
+            "langEnglishName": "Guarani"
+        },
+        {
+            "langCode": "gu",
+            "langEnglishName": "Gujarati"
+        },
+        {
+            "langCode": "gv",
+            "langEnglishName": "Manx"
+        },
+        {
+            "langCode": "ha",
+            "langEnglishName": "Hausa"
+        },
+        {
+            "langCode": "he",
+            "langEnglishName": "Hebrew"
+        },
+        {
+            "langCode": "hi",
+            "langEnglishName": "Hindi"
+        },
+        {
+            "langCode": "ho",
+            "langEnglishName": "Hiri Motu"
+        },
+        {
+            "langCode": "hr",
+            "langEnglishName": "Croatian"
+        },
+        {
+            "langCode": "ht",
+            "langEnglishName": "Haitian Creole"
+        },
+        {
+            "langCode": "hu",
+            "langEnglishName": "Hungarian"
+        },
+        {
+            "langCode": "hy",
+            "langEnglishName": "Armenian"
+        },
+        {
+            "langCode": "hz",
+            "langEnglishName": "Herero"
+        },
+        {
+            "langCode": "ia",
+            "langEnglishName": "Interlingua"
+        },
+        {
+            "langCode": "id",
+            "langEnglishName": "Indonesian"
+        },
+        {
+            "langCode": "ie",
+            "langEnglishName": "Interlingue; Occidental"
+        },
+        {
+            "langCode": "ig",
+            "langEnglishName": "Igbo"
+        },
+        {
+            "langCode": "ii",
+            "langEnglishName": "Sichuan Yi"
+        },
+        {
+            "langCode": "ik",
+            "langEnglishName": "Inupiaq"
+        },
+        {
+            "langCode": "io",
+            "langEnglishName": "Ido"
+        },
+        {
+            "langCode": "is",
+            "langEnglishName": "Icelandic"
+        },
+        {
+            "langCode": "it",
+            "langEnglishName": "Italian"
+        },
+        {
+            "langCode": "iu",
+            "langEnglishName": "Inuktitut"
+        },
+        {
+            "langCode": "ja",
+            "langEnglishName": "Japanese"
+        },
+        {
+            "langCode": "jv",
+            "langEnglishName": "Javanese"
+        },
+        {
+            "langCode": "ka",
+            "langEnglishName": "Georgian"
+        },
+        {
+            "langCode": "kg",
+            "langEnglishName": "Kongo"
+        },
+        {
+            "langCode": "ki",
+            "langEnglishName": "Kikuyu"
+        },
+        {
+            "langCode": "kj",
+            "langEnglishName": "Kuanyama"
+        },
+        {
+            "langCode": "kk",
+            "langEnglishName": "Kazakh"
+        },
+        {
+            "langCode": "kl",
+            "langEnglishName": "Greenlandic; Kalaallisut"
+        },
+        {
+            "langCode": "km",
+            "langEnglishName": "Central Khmer"
+        },
+        {
+            "langCode": "kn",
+            "langEnglishName": "Kannada"
+        },
+        {
+            "langCode": "ko",
+            "langEnglishName": "Korean"
+        },
+        {
+            "langCode": "kr",
+            "langEnglishName": "Kanuri"
+        },
+        {
+            "langCode": "ks",
+            "langEnglishName": "Kashmiri"
+        },
+        {
+            "langCode": "ku",
+            "langEnglishName": "Kurdish"
+        },
+        {
+            "langCode": "kv",
+            "langEnglishName": "Komi"
+        },
+        {
+            "langCode": "kw",
+            "langEnglishName": "Cornish"
+        },
+        {
+            "langCode": "ky",
+            "langEnglishName": "Kirghiz; Kyrgyz"
+        },
+        {
+            "langCode": "la",
+            "langEnglishName": "Latin"
+        },
+        {
+            "langCode": "lb",
+            "langEnglishName": "Luxembourgish; Letzeburgesch"
+        },
+        {
+            "langCode": "lg",
+            "langEnglishName": "Ganda"
+        },
+        {
+            "langCode": "li",
+            "langEnglishName": "Limburgan; Limburger; Limburgish"
+        },
+        {
+            "langCode": "ln",
+            "langEnglishName": "Lingala"
+        },
+        {
+            "langCode": "lo",
+            "langEnglishName": "Lao"
+        },
+        {
+            "langCode": "lt",
+            "langEnglishName": "Lithuanian"
+        },
+        {
+            "langCode": "lu",
+            "langEnglishName": "Luba-Katanga"
+        },
+        {
+            "langCode": "lv",
+            "langEnglishName": "Latvian"
+        },
+        {
+            "langCode": "mg",
+            "langEnglishName": "Malagasy"
+        },
+        {
+            "langCode": "mh",
+            "langEnglishName": "Marshallese"
+        },
+        {
+            "langCode": "mi",
+            "langEnglishName": "Maori"
+        },
+        {
+            "langCode": "mk",
+            "langEnglishName": "Macedonian"
+        },
+        {
+            "langCode": "ml",
+            "langEnglishName": "Malayalam"
+        },
+        {
+            "langCode": "mn",
+            "langEnglishName": "Mongolian"
+        },
+        {
+            "langCode": "mr",
+            "langEnglishName": "Marathi"
+        },
+        {
+            "langCode": "ms",
+            "langEnglishName": "Malay"
+        },
+        {
+            "langCode": "mt",
+            "langEnglishName": "Maltese"
+        },
+        {
+            "langCode": "my",
+            "langEnglishName": "Burmese"
+        },
+        {
+            "langCode": "na",
+            "langEnglishName": "Nauru"
+        },
+        {
+            "langCode": "nb",
+            "langEnglishName": "Norwegian bokmål"
+        },
+        {
+            "langCode": "nd",
+            "langEnglishName": "North Ndebele"
+        },
+        {
+            "langCode": "ne",
+            "langEnglishName": "Nepali"
+        },
+        {
+            "langCode": "ng",
+            "langEnglishName": "Ndonga"
+        },
+        {
+            "langCode": "nl",
+            "langEnglishName": "Dutch; Flemish"
+        },
+        {
+            "langCode": "nn",
+            "langEnglishName": "Norwegian Nynorsk; Nynorsk"
+        },
+        {
+            "langCode": "no",
+            "langEnglishName": "Norwegian"
+        },
+        {
+            "langCode": "nr",
+            "langEnglishName": "South Ndebele"
+        },
+        {
+            "langCode": "nv",
+            "langEnglishName": "Navajo; Navaho"
+        },
+        {
+            "langCode": "ny",
+            "langEnglishName": "Chichewa; Chewa; Nyanja"
+        },
+        {
+            "langCode": "oc",
+            "langEnglishName": "Occitan"
+        },
+        {
+            "langCode": "oj",
+            "langEnglishName": "Ojibwa"
+        },
+        {
+            "langCode": "om",
+            "langEnglishName": "Oromo"
+        },
+        {
+            "langCode": "or",
+            "langEnglishName": "Oriya"
+        },
+        {
+            "langCode": "os",
+            "langEnglishName": "Ossetian; Ossetic"
+        },
+        {
+            "langCode": "pa",
+            "langEnglishName": "Panjabi; Punjabi"
+        },
+        {
+            "langCode": "pi",
+            "langEnglishName": "Pali"
+        },
+        {
+            "langCode": "pl",
+            "langEnglishName": "Polish"
+        },
+        {
+            "langCode": "ps",
+            "langEnglishName": "Pushto; Pashto"
+        },
+        {
+            "langCode": "pt",
+            "langEnglishName": "Portuguese"
+        },
+        {
+            "langCode": "qu",
+            "langEnglishName": "Quechua"
+        },
+        {
+            "langCode": "rm",
+            "langEnglishName": "Romansh"
+        },
+        {
+            "langCode": "rn",
+            "langEnglishName": "Rundi"
+        },
+        {
+            "langCode": "ro",
+            "langEnglishName": "Romanian; Moldavian; Moldovan"
+        },
+        {
+            "langCode": "ru",
+            "langEnglishName": "Russian"
+        },
+        {
+            "langCode": "rw",
+            "langEnglishName": "Kinyarwanda"
+        },
+        {
+            "langCode": "sa",
+            "langEnglishName": "Sanskrit"
+        },
+        {
+            "langCode": "sc",
+            "langEnglishName": "Sardinian"
+        },
+        {
+            "langCode": "sd",
+            "langEnglishName": "Sindhi"
+        },
+        {
+            "langCode": "se",
+            "langEnglishName": "Northern Sami"
+        },
+        {
+            "langCode": "sg",
+            "langEnglishName": "Sango"
+        },
+        {
+            "langCode": "si",
+            "langEnglishName": "Sinhala; Sinhalese"
+        },
+        {
+            "langCode": "sk",
+            "langEnglishName": "Slovak"
+        },
+        {
+            "langCode": "sl",
+            "langEnglishName": "Slovenian"
+        },
+        {
+            "langCode": "sm",
+            "langEnglishName": "Samoan"
+        },
+        {
+            "langCode": "sn",
+            "langEnglishName": "Shona"
+        },
+        {
+            "langCode": "so",
+            "langEnglishName": "Somali"
+        },
+        {
+            "langCode": "sq",
+            "langEnglishName": "Albanian"
+        },
+        {
+            "langCode": "sr",
+            "langEnglishName": "Serbian"
+        },
+        {
+            "langCode": "ss",
+            "langEnglishName": "Swati"
+        },
+        {
+            "langCode": "st",
+            "langEnglishName": "Sotho"
+        },
+        {
+            "langCode": "su",
+            "langEnglishName": "Sundanese"
+        },
+        {
+            "langCode": "sv",
+            "langEnglishName": "Swedish"
+        },
+        {
+            "langCode": "sw",
+            "langEnglishName": "Swahili"
+        },
+        {
+            "langCode": "ta",
+            "langEnglishName": "Tamil"
+        },
+        {
+            "langCode": "te",
+            "langEnglishName": "Telugu"
+        },
+        {
+            "langCode": "tg",
+            "langEnglishName": "Tajik"
+        },
+        {
+            "langCode": "th",
+            "langEnglishName": "Thai"
+        },
+        {
+            "langCode": "ti",
+            "langEnglishName": "Tigrinya"
+        },
+        {
+            "langCode": "tk",
+            "langEnglishName": "Turkmen"
+        },
+        {
+            "langCode": "tl",
+            "langEnglishName": "Tagalog"
+        },
+        {
+            "langCode": "tn",
+            "langEnglishName": "Tswana"
+        },
+        {
+            "langCode": "to",
+            "langEnglishName": "Tonga (Tonga Islands)"
+        },
+        {
+            "langCode": "tr",
+            "langEnglishName": "Turkish"
+        },
+        {
+            "langCode": "ts",
+            "langEnglishName": "Tsonga"
+        },
+        {
+            "langCode": "tt",
+            "langEnglishName": "Tatar"
+        },
+        {
+            "langCode": "tw",
+            "langEnglishName": "Twi"
+        },
+        {
+            "langCode": "ty",
+            "langEnglishName": "Tahitian"
+        },
+        {
+            "langCode": "ug",
+            "langEnglishName": "Uighur; Uyghur"
+        },
+        {
+            "langCode": "uk",
+            "langEnglishName": "Ukrainian"
+        },
+        {
+            "langCode": "ur",
+            "langEnglishName": "Urdu"
+        },
+        {
+            "langCode": "uz",
+            "langEnglishName": "Uzbek"
+        },
+        {
+            "langCode": "ve",
+            "langEnglishName": "Venda"
+        },
+        {
+            "langCode": "vi",
+            "langEnglishName": "Vietnamese"
+        },
+        {
+            "langCode": "vo",
+            "langEnglishName": "Volapük"
+        },
+        {
+            "langCode": "wa",
+            "langEnglishName": "Walloon"
+        },
+        {
+            "langCode": "wo",
+            "langEnglishName": "Wolof"
+        },
+        {
+            "langCode": "xh",
+            "langEnglishName": "Xhosa"
+        },
+        {
+            "langCode": "yi",
+            "langEnglishName": "Yiddish"
+        },
+        {
+            "langCode": "yo",
+            "langEnglishName": "Yoruba"
+        },
+        {
+            "langCode": "za",
+            "langEnglishName": "Zhuang; Chuang"
+        },
+        {
+            "langCode": "zh",
+            "langEnglishName": "Chinese"
+        },
+        {
+            "langCode": "zu",
+            "langEnglishName": "Zulu"
+        }
+    ]
+}
