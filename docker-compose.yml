@@ -1,8 +1,0 @@
-services:
-  kanami:
-    image: node:lts-alpine3.20
-    container_name: kanami
-    working_dir: /home/node/app
-    volumes:
-      - ./:/home/node/app
-    command: sh -c "npm install && npx nodemon index.js"

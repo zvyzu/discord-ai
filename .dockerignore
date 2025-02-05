@@ -1,3 +1,14 @@
+.dockerignore
 .env
-node_modules/
-package-lock.json
+.git
+.github
+.gitignore
+.node-version
+.prettierrc
+.replit
+.vscode
+Procfile
+Dockerfile
+node_modules
+npm-debug.log
+config.json
