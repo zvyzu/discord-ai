@@ -1,11 +1,16 @@
 {
-    "days": {
-        "sunday": "Sunday",
-        "monday": "Monday",
-        "tuesday": "Tuesday",
-        "wednesday": "Wednesday",
-        "thursday": "Thursday",
-        "friday": "Friday",
-        "saturday": "Saturday"
+    "roll": {
+        "description": "Roll the dice",
+        "result": "🎲 You got {{result}} from {{sides}}!",
+        "sides": "Number of dice sides: {{sides}}"
+    },
+    "ping": {
+        "description": "Show the bot's average ping",
+        "result": "Pong! 🏓\nLatency: {{latency}}ms\nWebsocket: {{websocket}}ms"
+    },
+    "common": {
+        "cooldownMessage": "please wait {{time}} more second(s) before reusing the `{{name}}` command.",
+        "errorCommand": "There was an error executing that command.",
+        "missingPermissions": "Missing permissions:"
     }
 }

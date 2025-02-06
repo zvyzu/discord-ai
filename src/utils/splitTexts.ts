@@ -1,15 +1,3 @@
-export async function imageUrlToBase64(url: string) {
-  try {
-    const response = await fetch(url);
-    const arrayBuffer = await response.arrayBuffer();
-    const buffer = Buffer.from(arrayBuffer);
-    return `data:image/jpeg;base64,${buffer.toString('base64')}`;
-  } catch (error) {
-    console.error('Error converting image:', error);
-    throw error;
-  }
-}
-
 export function splitTextIntoChunks(text: string) {
   const maxLength = 2000;
   const chunks = [];
