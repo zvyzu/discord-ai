@@ -1,18 +1,18 @@
 {
     "locales": {
-        "LANG": "",
-        "TIMEZONE": ""
+        "LANG": "en",
+        "TIMEZONE": "America/New_York"
     },
     "discord": {
         "ACTIVITY": "",
-        "CLIENT_ID": "",
-        "CHANNEL_ID": "",
-        "DISCORD_TOKEN": ""
+        "USER_ID": "YOUR_DISCORD_USER_ID",
+        "CHANNEL_ID": "YOUR_DISCORD_SERVER_CHANNEL_ID",
+        "TOKEN": "YOUR_BOT_DISCORD_TOKEN"
     },
     "groq": {
-        "DEFAULT_MODEL": "",
-        "GROQ_API_KEY": "",
-        "GROQ_API_KEY_BACKUP": "",
+        "DEFAULT_MODEL": "llama-3.3-70b-versatile",
+        "GROQ_API_KEY": "YOUR_GROQ_API_KEY",
+        "GROQ_API_KEY_BACKUP": "YOUR_GROQ_API_KEY_ON_ANOTHER_ACCOUNT",
         "HELLO_MESSAGE": "",
         "SYSTEM_PROMPT": ""
     }
