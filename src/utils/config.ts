@@ -12,9 +12,9 @@ try {
     },
     discord: {
       ACTIVITY: process.env.ACTIVITY || "",
-      CLIENT_ID: process.env.CLIENT_ID || "",
+      USER_ID: process.env.USER_ID || "",
       CHANNEL_ID: process.env.CHANNEL_ID || "",
-      DISCORD_TOKEN: process.env.DISCORD_TOKEN || ""
+      TOKEN: process.env.TOKEN || ""
     },
     groq: {
       DEFAULT_MODEL: process.env.DEFAULT_MODEL || "llama-3.3-70b-versatile",

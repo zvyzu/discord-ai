@@ -5,7 +5,7 @@ import type {
   Interaction,
   Snowflake
 } from "discord.js";
-import { Collection, Events, REST, Routes } from "discord.js";
+import { ActivityType, Collection, Events, REST, Routes } from "discord.js";
 import type { Command } from "../types/command";
 import type { PermissionResult } from "../types/permission";
 import { checkPermissions } from "../utils/checkPermissions";
@@ -23,11 +23,11 @@ export class Bot {
   public cooldowns = new Collection<string, Collection<Snowflake, number>>();
 
   public constructor(public readonly client: Client) {
-    this.client.login(process.env.DISCORD_TOKEN);
+    this.client.login(config.discord.TOKEN);
 
     this.client.on("ready", () => {
       console.log(`${this.client.user?.username} ready!`);
-
+      this.client.user?.setActivity(config.discord.ACTIVITY, { type: ActivityType.Custom });
       this.registerSlashCommands();
     });
 
@@ -47,7 +47,7 @@ export class Bot {
     }
 
     try {
-      const rest = new REST({ version: "9" }).setToken(config.discord.DISCORD_TOKEN);
+      const rest = new REST({ version: "9" }).setToken(config.discord.TOKEN);
 
       if (!this.client.user) {
         throw new Error("Client user is not initialized");

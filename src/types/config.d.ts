@@ -5,9 +5,9 @@ type config = {
   };
   discord: {
     ACTIVITY: string;
-    CLIENT_ID: string;
+    USER_ID: string;
     CHANNEL_ID: string;
-    DISCORD_TOKEN: string;
+    TOKEN: string;
   };
   groq: {
     DEFAULT_MODEL: string;
