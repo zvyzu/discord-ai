@@ -2,7 +2,8 @@
     "roll": {
         "description": "Roll the dice",
         "result": "🎲 You got {{result}} from {{sides}}!",
-        "sides": "Number of dice sides: {{sides}}"
+        "sides": "Number of dice sides",
+        "side": "side"
     },
     "ping": {
         "description": "Show the bot's average ping",

@@ -2,7 +2,7 @@
     "roll": {
         "description": "Lempar dadu",
         "result": "🎲 Kamu mendapat angka {{result}} dari {{sides}}!",
-        "sides": "Jumlah sisi dadu: {{sides}}",
+        "sides": "Jumlah sisi dadu",
         "side": "sisi"
     },
     "ping": {

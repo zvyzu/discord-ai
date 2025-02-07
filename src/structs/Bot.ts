@@ -5,7 +5,7 @@ import type {
   Interaction,
   Snowflake
 } from "discord.js";
-import { ActivityType, Collection, Events, REST, Routes } from "discord.js";
+import { ActivityType, Collection, Events, REST, Routes, MessageFlags } from "discord.js";
 import type { Command } from "../types/command";
 import type { PermissionResult } from "../types/permission";
 import { checkPermissions } from "../utils/checkPermissions";
@@ -91,7 +91,7 @@ export class Bot {
               time: timeLeft.toFixed(1),
               name: interaction.commandName
             }),
-            ephemeral: true
+            flags: MessageFlags.Ephemeral
           });
         }
       }
@@ -110,9 +110,9 @@ export class Bot {
       } catch (error: unknown) {
         console.error(error);
         if (error instanceof Error && error.message.includes("permissions")) {
-          interaction.reply({ content: error.toString(), ephemeral: true }).catch(console.error);
+          interaction.reply({ content: error.toString(), flags: MessageFlags.Ephemeral }).catch(console.error);
         } else {
-          interaction.reply({ content: t("common.errorCommand"), ephemeral: true }).catch(console.error);
+          interaction.reply({ content: t("common.errorCommand"), flags: MessageFlags.Ephemeral }).catch(console.error);
         }
       }
     });

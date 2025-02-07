@@ -4,7 +4,7 @@ import t from "../utils/i18n";
 
 export default {
   data: new SlashCommandBuilder().setName("ping").setDescription(t("ping.description")),
-  cooldown: 1,
+  cooldown: 2,
   async execute(interaction: ChatInputCommandInteraction) {
     await interaction.reply({ content: 'Pinging...' });
     const sent = await interaction.fetchReply() as Message;
