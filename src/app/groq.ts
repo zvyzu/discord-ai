@@ -56,6 +56,7 @@ export async function chat(prompt: string | messages[], model = config.groq.DEFA
 
   try {
     const groq = new Groq({ apiKey: apikey });
+    // @ts-ignore
     const response = await groq.chat.completions.create({
       // Required parameters
       messages: messages,
@@ -85,6 +86,18 @@ export async function chat(prompt: string | messages[], model = config.groq.DEFA
 
       // If set, partial message deltas will be sent.
       stream: false,
+
+      // Groq API supports explicit reasoning formats through the reasoning_format parameter,
+      // giving you fine-grained control over how the model's reasoning process is presented.
+      // This is particularly valuable for valid JSON outputs, debugging,
+      // and understanding the model's decision-making process.
+      // Note: The format defaults to raw or parsed when JSON mode or tool use are enabled
+      // as those modes do not support raw. If reasoning is explicitly set to raw with JSON mode
+      // or tool use enabled, we will return a 400 error.
+      // parsed :	Separates reasoning into a dedicated field while keeping the response concise.
+      // raw    :	Includes reasoning within think tags in the content.
+      // hidden :	Returns only the final answer for maximum efficiency.
+      reasoning_format: "hidden"
     });
 
     return response.choices[0]?.message?.content as string;
