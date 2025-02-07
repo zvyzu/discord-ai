@@ -1,4 +1,13 @@
 {
+    "common": {
+        "cooldownMessage": "please wait {{time}} more second(s) before reusing the `{{name}}` command.",
+        "errorCommand": "There was an error executing that command.",
+        "missingPermissions": "Missing permissions:"
+    },
+    "chat": {
+        "description": "Sent messages to AI LLM(Large Language Model)",
+        "promptDescription": "Please enter the message you want to send to AI LLM(Large Language Model)."
+    },
     "roll": {
         "description": "Roll the dice",
         "result": "🎲 You got {{result}} from {{sides}}!",
@@ -6,12 +15,7 @@
         "side": "side"
     },
     "ping": {
-        "description": "Show the bot's average ping",
+        "description": "Show bot's average ping",
         "result": "Pong! 🏓\nLatency: {{latency}}ms\nWebsocket: {{websocket}}ms"
-    },
-    "common": {
-        "cooldownMessage": "please wait {{time}} more second(s) before reusing the `{{name}}` command.",
-        "errorCommand": "There was an error executing that command.",
-        "missingPermissions": "Missing permissions:"
     }
 }

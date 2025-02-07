@@ -1,4 +1,13 @@
 {
+    "common": {
+        "cooldownMessage": "Mohon tunggu {{time}} lagi sebelum menggunakan perintah `{{name}}` ini kembali.",
+        "errorCommand": "Terjadi kesalahan saat menjalankan perintah ini.",
+        "missingPermissions": "Izin tidak ditemukan:"
+    },
+    "chat": {
+        "description": "Mengirim pesan ke AI LLM(Large Language Model)",
+        "promptDescription": "Silakan masukkan pesan yang ingin dikirim ke AI LLM(Large Language Model)."
+    },
     "roll": {
         "description": "Lempar dadu",
         "result": "🎲 Kamu mendapat angka {{result}} dari {{sides}}!",
@@ -8,10 +17,5 @@
     "ping": {
         "description": "Menampilkan ping rata-rata bot",
         "result": "Pong! 🏓\nLatensi: {{latency}}ms\nWebsocket: {{websocket}}ms"
-    },
-    "common": {
-        "cooldownMessage": "Mohon tunggu {{time}} lagi sebelum menggunakan perintah `{{name}}` ini kembali.",
-        "errorCommand": "Terjadi kesalahan saat menjalankan perintah ini.",
-        "missingPermissions": "Izin tidak ditemukan:"
     }
 }

@@ -1,4 +1,4 @@
-export function splitTextIntoChunks(text: string) {
+export default function splitTextIntoChunks(text: string) {
   const maxLength = 2000;
   const chunks = [];
   let currentChunk = '';
