@@ -1,0 +1,8 @@
+services:
+  discord-ai:
+    image: oven/bun:alpine
+    container_name: discord-ai
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: sh -c "bun install && bun run index.ts"
